@@ -1,0 +1,189 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.img {
+  border-radius: 20%;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  overflow: hidden;
+  height: 420px;
+  width: 420px;
+}
+
+.nav {
+  list-style-type: 0;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  display: inline;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #afaaff;
+}
+
+li {
+  float: right;
+  margin-right: 2rem;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.logo {
+  float: left;
+  color: white;
+  text-align: center;
+  margin-left: 2rem;
+}
+
+.main-container {
+  text-align: center;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.destination-container {
+  margin-bottom: 5rem;
+}
+
+/* form */
+
+.form-label {
+  margin-right: 5px;
+  font-size: 20px;
+}
+
+.form-input {
+  height: 25px;
+  width: 40%;
+  font-size: 20px;
+}
+
+/* destinations */
+
+.destinations-header {
+  margin: 3rem;
+}
+
+/* flights */
+
+.flight-container {
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+.single-destination {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.single-destination h1 {
+  margin-top: 4rem;
+}
+
+.capital {
+  margin-bottom: 5rem;
+}
+
+.prices {
+  margin-left: 1rem;
+}
+
+.generic-img {
+  font-size: 11px;
+}
+
+/* homepage */
+
+.vacation-img {
+  width: 1000px;
+  margin-bottom: 50px;
+  margin-top: 30px;
+  border-radius: 50px;
+}
+
+/* buttons */
+
+.btn {
+  margin-left: 5px;
+  color: white;
+  background-color: #afaaff;
+  border-radius: 30px;
+  height: 30px;
+  width: 10%;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+button {
+  color: white;
+  background-color: #afaaff;
+  border-radius: 30px;
+  height: 30px;
+  width: 20%;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+/* about page */
+
+.about {
+  text-align: center;
+  margin: 3rem;
+}
+
+footer {
+  text-align: center;
+  padding-top: 1rem;
+  background-color: #afaaff;
+  color: white;
+  position: relative;
+  width: 100%;
+  bottom: 0;
+  height: 2.5rem;
+  top: 2rem;
+}
+
+/* small screen */
+
+@media screen and (max-width: 800px) {
+  .form-container {
+    margin-bottom: 3rem;
+  }
+
+  button {
+    font-size: 11px;
+  }
+
+  .btn {
+    font-size: 11px;
+  }
+}
