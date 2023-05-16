@@ -1,6 +1,5 @@
 // imports
 import React, { useState, useContext, useEffect } from "react";
-const { IPinfoWrapper } = require("node-ipinfo");
 
 const AppContext = React.createContext();
 
@@ -26,7 +25,6 @@ const AppProvider = ({ children }) => {
   const [currentAirport, setCurrentAirport] = useState(airportData);
 
   // fetch function to pull from API
-
   const options = {
     method: "GET",
     headers: {
@@ -36,15 +34,11 @@ const AppProvider = ({ children }) => {
   };
 
   const getIp = async () => {
-    try {
-      const response = await fetch("https://api.ipify.org/?format=json");
-      const data = await response.json();
-      const ipinfo = new IPinfoWrapper("c1cc48ed86a9cb");
-      const ipAddress = await ipinfo.lookupIp(data.ip);
-      setIp(ipAddress.city);
-    } catch (error) {
-      console.log(error);
-    }
+    const request = await fetch("https://ipinfo.io/json?token=c1cc48ed86a9cb");
+    const jsonResponse = await request.json();
+
+    console.log(jsonResponse.ip, jsonResponse.city);
+    setIp(jsonResponse.city);
   };
 
   const fetchDestinations = async () => {
