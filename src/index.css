@@ -130,6 +130,10 @@ li a {
   border-radius: 50px;
 }
 
+.vacation-img-hide {
+  display: none;
+}
+
 /* buttons */
 
 .btn {
