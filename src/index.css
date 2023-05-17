@@ -200,7 +200,10 @@ footer {
     width: 4rem;
   }
   .form-container .location-btn {
-    width: 8rem;
+    width: 12rem;
+  }
+  .form-input {
+    margin-bottom: 30px;
   }
   .vacation-img {
     margin-left: -19rem;
