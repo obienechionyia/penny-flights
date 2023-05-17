@@ -35,7 +35,9 @@ function SearchForm() {
         </div>
       </form>
       <p>or</p>
-      <button onClick={setToIp}>Current Location 📍</button>
+      <button class="location-btn" onClick={setToIp}>
+        Current Location 📍
+      </button>
     </div>
   );
 }

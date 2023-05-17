@@ -191,3 +191,18 @@ footer {
     font-size: 11px;
   }
 }
+
+@media screen and (max-width: 750px) {
+  .nav a {
+    font-size: medium;
+  }
+  .form-container .btn {
+    width: 4rem;
+  }
+  .form-container .location-btn {
+    width: 8rem;
+  }
+  .vacation-img {
+    margin-left: -19rem;
+  }
+}

@@ -1,7 +1,7 @@
 import React from "react";
 import DestinationList from "../components/DestinationList";
 import SearchForm from "../components/SearchForm";
-import travel from "../assets/images/travel.svg";
+import travelPNG from "../assets/images/travel.png";
 import { useGlobalContext } from "../context";
 
 const Home = () => {
@@ -12,7 +12,7 @@ const Home = () => {
       <SearchForm />
       <DestinationList />
       <img
-        src={travel}
+        src={travelPNG}
         alt="vacation"
         className={
           Number(destinations.length) > 0 ? "vacation-img-hide" : "vacation-img"
