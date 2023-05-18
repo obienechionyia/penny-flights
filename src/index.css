@@ -213,4 +213,8 @@ footer {
     max-width: 300px;
     height: auto;
   }
+  .img-container .img {
+    max-width: 300px;
+    height: auto;
+  }
 }
