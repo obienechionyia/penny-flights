@@ -196,6 +196,9 @@ footer {
   .nav a {
     font-size: medium;
   }
+  .form-input {
+    width: 120px;
+  }
   .form-container .btn {
     width: 4rem;
     margin-top: 30px;
@@ -205,5 +208,9 @@ footer {
   }
   .vacation-img {
     margin-left: -19rem;
+  }
+  .destination-container .img {
+    max-width: 300px;
+    height: auto;
   }
 }
