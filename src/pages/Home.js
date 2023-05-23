@@ -6,7 +6,6 @@ import { useGlobalContext } from "../context";
 
 const Home = () => {
   const { destinations } = useGlobalContext();
-  console.log(destinations.length);
   return (
     <main className="main-container">
       <SearchForm />

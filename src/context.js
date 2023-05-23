@@ -36,8 +36,6 @@ const AppProvider = ({ children }) => {
   const getIp = async () => {
     const request = await fetch("https://ipinfo.io/json?token=c1cc48ed86a9cb");
     const jsonResponse = await request.json();
-
-    console.log(jsonResponse.ip, jsonResponse.city);
     setIp(jsonResponse.city);
   };
 
