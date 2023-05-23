@@ -24,7 +24,7 @@ const AppProvider = ({ children }) => {
   const [currentFlights, setCurrentFlights] = useState([]);
   const [currentAirport, setCurrentAirport] = useState(airportData);
 
-  // fetch function to pull from API
+  // function to pull from Skyscanners API
   const options = {
     method: "GET",
     headers: {
@@ -33,12 +33,14 @@ const AppProvider = ({ children }) => {
     },
   };
 
+  // function to get user's IP address to add to "My Location" button
   const getIp = async () => {
     const request = await fetch("https://ipinfo.io/json?token=c1cc48ed86a9cb");
     const jsonResponse = await request.json();
     setIp(jsonResponse.city);
   };
 
+  // function to fetch destinations from user's entered location
   const fetchDestinations = async () => {
     setDestinations([]);
     setLoading(true);
@@ -79,6 +81,7 @@ const AppProvider = ({ children }) => {
     }
   };
 
+  // function to fetch flight prices to whatever destination user clicks
   const fetchFlights = async () => {
     setLoading(true);
     try {
@@ -107,6 +110,7 @@ const AppProvider = ({ children }) => {
     }
   };
 
+  // useEffects to set and get previously entered locations to and from user's local storage
   useEffect(() => {
     fetchDestinations();
     window.localStorage.setItem("SEARCH_TERM", JSON.stringify(searchTerm));
