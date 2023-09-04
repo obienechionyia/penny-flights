@@ -15,7 +15,7 @@ const Navbar = () => {
       <div>
         <ul className="nav">
           <a href="/" onClick={homeButton}>
-            <h1 className="logo">Penny Flights®</h1>
+            <h1 className="logo">Penny Flights</h1>
           </a>
           <li>
             <Link to="/about">About</Link>
